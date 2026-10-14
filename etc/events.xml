@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+    Copyright © 2026 Roman Pasichnyk
+    SPDX-License-Identifier: OSL-3.0 OR AFL-3.0
+
+    Free gifts: the rules' calculations note which gifts apply while the
+    totals are collected; after, the cart's gift lines follow.
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_quote_collect_totals_before">
+        <observer name="zero_promotions_gifts" instance="Zero\Promotions\Observer\ResetGifts"/>
+    </event>
+    <event name="sales_quote_collect_totals_after">
+        <observer name="zero_promotions_gifts" instance="Zero\Promotions\Observer\SyncGifts"/>
+    </event>
+</config>

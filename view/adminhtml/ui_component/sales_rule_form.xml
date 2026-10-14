@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+    Copyright © 2026 Roman Pasichnyk
+    SPDX-License-Identifier: OSL-3.0 OR AFL-3.0
+
+    The gift SKUs of a "Free gift" rule, under its Apply choice.
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="actions">
+        <field name="zero_gift_skus" formElement="input" sortOrder="15">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">sales_rule</item>
+                </item>
+            </argument>
+            <settings>
+                <label translate="true">Gift SKUs</label>
+                <dataScope>zero_gift_skus</dataScope>
+                <notice translate="true">For "Free gift": the SKUs (simple products, comma-separated) added to the cart for free while the rule applies; Discount Qty is how many of each (1 if empty).</notice>
+            </settings>
+        </field>
+    </fieldset>
+</form>
