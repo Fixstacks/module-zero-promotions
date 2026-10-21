@@ -1,4 +1,4 @@
-# fixstacks/module-zero-promotions — licensing
+# zerofront/module-zero-promotions — licensing
 
 Copyright © 2026 Roman Pasichnyk.
 
